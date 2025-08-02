@@ -27,5 +27,6 @@ int main() {
         s += s3[0];
         cout << s << endl;
     }
+    cout << "End" << endl;
     return 0;
 }
