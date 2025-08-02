@@ -1,0 +1,28 @@
+#include<iostream>
+#include<iomanip>
+#include<thread>
+#include<typeinfo>
+#include<cstring>
+#include<bits/stdc++.h>
+#include<string>
+#include<math.h>
+#include<cmath>
+#include<cstdlib>
+#include<algorithm>
+#include<vector>
+#include<exception>
+#include<stdexcept>
+#include<fstream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while(t--) {
+        int n;
+        cin >> n;
+        int x = (n / 2) + 1;
+        cout << (n - x) + 1 <<endl;
+    }
+    return 0;
+}
