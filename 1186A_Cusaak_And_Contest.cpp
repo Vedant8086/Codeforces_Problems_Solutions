@@ -16,13 +16,12 @@
 using namespace std;
 
 int main() {
-    int n, k, l, c, d, p, nl, np;
-    cin >> n >> k >> l >> c >> d >> p >> nl >> np;
-    int first = (k * l);
-    int second = (c * d);
-    int third = (p / np);
-    int fourth = (first / nl);
-    cout << min({fourth,third,second}) / n << endl;
-
+    int n,m,k;
+    cin >> n >> m >> k;
+    if(m >= n && k >= n) {
+        cout << "Yes" << endl;
+    } else {
+        cout << "No" << endl;
+    }
     return 0;
 }

@@ -16,13 +16,14 @@
 using namespace std;
 
 int main() {
-    int n, k, l, c, d, p, nl, np;
-    cin >> n >> k >> l >> c >> d >> p >> nl >> np;
-    int first = (k * l);
-    int second = (c * d);
-    int third = (p / np);
-    int fourth = (first / nl);
-    cout << min({fourth,third,second}) / n << endl;
-
+    string s1,s2;
+    cin >> s1 >> s2;
+    int count = 0;
+    for(int i =0;i < s2.length();i++) {
+        if(s1[count] == s2[i]) {
+            count++;
+        }
+    }
+    cout << count + 1 << endl;
     return 0;
 }
