@@ -21,13 +21,23 @@ int main() {
     while(t--) {
         int n;
         cin >> n;
-        if(n <= 2) cout << "NO" << endl; 
-        else if((n & (n-1)) == 0) {
+        if(n % 4 == 0) {
             cout << "YES" << endl;
-            
-        } else  {
-            cout << "NO" << endl;
-        } 
+            int sum = 0;
+            for(int i = 2;i <=n;i += 2) {
+                cout << i << " ";
+                sum += i;
+            }
+            int x = 1,ex_sum = 0;
+
+            for(int i = 1;i <= n/2-1;i++) {
+                cout << x << " ";
+                ex_sum += x;
+                x += 2;
+
+            }
+            cout << sum - ex_sum << endl;
+        } else cout << "NO" << endl;
     }
     
     return 0;
