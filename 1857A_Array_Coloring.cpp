@@ -19,11 +19,19 @@ int main() {
     int t;
     cin >> t;
     while(t--) {
-        int n;
+        int n,count = 0;
         cin >> n;
         vector<int> vec(n);
         for(int i = 0;i < n;i++) {
             cin >> vec[i];
+            if(vec[i] % 2 != 0) {
+                count++;
+            }
+        }
+        if(count % 2 == 0) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
         }
         
     }
