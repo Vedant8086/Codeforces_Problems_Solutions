@@ -1,23 +1,12 @@
-#include<iostream>
-#include<iomanip>
-#include<thread>
-#include<typeinfo>
-#include<cstring>
 #include<bits/stdc++.h>
-#include<string>
-#include<math.h>
-#include<cmath>
-#include<cstdlib>
-#include<algorithm>
-#include<vector>
-#include<exception>
-#include<stdexcept>
-#include<fstream>
+
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    
-    return 0;
+    freopen("Input.txt","r",stdin);
+    freopen("Output.txt","w",stdout);
+    int n,m;
+    cin >> n >> m;
+    cout << " Number are" << n << " : " << m <<endl;
 }
+

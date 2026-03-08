@@ -1,2 +1,1 @@
-10 Text 112
-Error
+ Number are10 : 12
