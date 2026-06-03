@@ -1,27 +1,22 @@
-#include<iostream>
-#include<iomanip>
-#include<thread>
-#include<typeinfo>
-#include<cstring>
-#include<bits/stdc++.h>
-#include<string>
-#include<math.h>
-#include<cmath>
-#include<cstdlib>
-#include<algorithm>
-#include<vector>
-#include<exception>
-#include<stdexcept>
-#include<fstream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
     int t;
     cin >> t;
     while(t--) {
-        int a,b,n;
+        long long a,b,n;
         cin >> a >> b >> n;
-        
+        int ops = 0;
+        while((a + b <= n)) {
+            if(a >= b) {
+                b += a;
+            } else {
+                a += b;
+            }
+            ops++;
+        }
+        cout << ops + 1 << endl;
     }
     return 0;
 }
